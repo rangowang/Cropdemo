@@ -31,7 +31,7 @@ public class ChooseBorderView extends View {
     public ChooseBorderView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.setFocusable(true);
-        this.setFocusableInTouchMode(true);
+        this.setFocusableInTouchMode(false);
         init();
     }
 

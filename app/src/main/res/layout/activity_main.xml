@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.suntec.pset.croper2.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+
+        <ImageButton
+            android:id="@+id/certification_return_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:background="#000000"
+            android:padding="15dp"
+            android:scaleType="center"
+            android:src="@drawable/topbar_return_btn"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_toEndOf="@id/certification_return_btn"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/crop"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="20sp"/>-->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/testimg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <net.suntec.pset.croper2.ZoomImageView
+            android:id="@+id/zoom_image_view"
+            android:background="#303030"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <net.suntec.pset.croper2.ChooseBorderView
+            android:id="@+id/choose_border_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_details_btn"
+            android:text="Ok"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
